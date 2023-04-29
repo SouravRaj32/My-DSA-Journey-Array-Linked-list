@@ -17,7 +17,7 @@ struct node
 struct node *head;
 struct node *newnode;
 struct node *temp;
-;
+
 
 // main()
 int main()
@@ -43,7 +43,7 @@ int main()
             temp = newnode;//
         }
 
-        printf("Do you want to continue (1/0)? : ");
+        printf("Do you want to continue (1 : Yes / 0 : No )? : ");
         scanf("%d", &choice);
     }
     temp = head;
@@ -64,7 +64,7 @@ int main()
         break;
     case 2:
         at_end();
-        display();
+        display(); 
         break;
     case 3:
         at_position(count);
