@@ -4,7 +4,6 @@
 void getlength();
 void display();
 
-
 struct node
 {
     int data;
@@ -14,7 +13,6 @@ struct node
 struct node *head;
 struct node *newnode;
 struct node *temp;
-
 
 // main()
 int main()
@@ -36,13 +34,12 @@ int main()
         else
         {
             temp->next = newnode;
-            temp = newnode;//
+            temp = newnode; //
         }
 
         printf("Do you want to continue (1 : Yes / 0 : No )? : ");
         scanf("%d", &choice);
     }
-    
 
     printf("Which operation do you want to perform ?\n press 1 ----> To find Length of Linked List\n press 2 ----> To Display the Linked list\n ");
     scanf("%d", &a);
@@ -53,7 +50,7 @@ int main()
         getlength();
         display();
         break;
-    
+
     case 2:
         display();
         break;
@@ -61,21 +58,23 @@ int main()
     return 0;
 }
 
-
-
-void getlength(){
-    int count=0;
+void getlength()
+{
+    int count = 0;
     struct node *temp;
-    temp=head;
-    if(head==0){
-
+    temp = head;
+    if (head == 0)
+    {
+        printf("empty list");
     }
-    else{
-    while(temp!=0){
-        count++;
-        temp=temp->next;
-    }
-    printf("Length of Linked List is : %d\n",count);
+    else
+    {
+        while (temp != 0)
+        {
+            count++;
+            temp = temp->next;
+        }
+        printf("Length of Linked List is : %d\n", count);
     }
 }
 // Printing the Linked list
@@ -88,4 +87,4 @@ void display()
         printf("%d\t", temp->data);
         temp = temp->next;
     }
-} 
+}

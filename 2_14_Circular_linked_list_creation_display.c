@@ -11,7 +11,7 @@ struct node *head, *newnode, *temp;
 
 int main()
 {
-
+    //creation of circularLL without maintaining tail pointer
     head = 0;
     int choice = 1;
     while (choice)
