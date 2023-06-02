@@ -11,6 +11,7 @@ struct node
 };
 struct node *create()
 {
+    //create function
     int x;
     struct node *newnode;
     newnode = (struct node *)malloc(sizeof(struct node));
